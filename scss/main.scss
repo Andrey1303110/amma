@@ -6,4 +6,32 @@ $silver: #C0BCB8;
 $black: #171D1A;
 $white: #F1F1F1;
 
+$font_cof: 1;
+
+$light: 'Proxima Nova Lt';
+$semibold: 'Proxima Nova Lt';
+$bold: 'Proxima Nova Rg';
+ 
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.wrapper {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+nav {
+    height: 80px;
+    a {
+
+    }
+}
+
 

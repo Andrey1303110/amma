@@ -544,10 +544,3 @@ footer {
   height: 18.22917vw;
   background: white;
 }
-
-@media screen and (min-width: 1440px) {
-  .wrapper {
-    width: 55.72917vw;
-    margin: 0 auto;
-  }
-}

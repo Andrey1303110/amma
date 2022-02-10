@@ -1576,7 +1576,7 @@ section {
   }
   #contact .contact-card {
     width: 81.25vw;
-    height: 64.45312vw;
+    min-height: 64.45312vw;
     margin-bottom: 3.90625vw;
     border-radius: 3.125vw;
     background: white;

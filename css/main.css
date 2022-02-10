@@ -129,7 +129,30 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-center, *.flex-center, * .flex-center, * + .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-center-all, *.flex-center-all, * .flex-center-all, * + .flex-center-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #header {
@@ -222,6 +245,7 @@ p.title {
 
 #mission {
   height: 20.3125vw;
+  background: white;
 }
 
 #mission .text {
@@ -257,10 +281,11 @@ p.title {
 
 #team {
   height: 34.89583vw;
+  padding-top: 5.57292vw;
+  background: white;
 }
 
 #team .title {
-  margin-top: 5.57292vw;
   margin-bottom: 3.48958vw;
 }
 
@@ -324,4 +349,163 @@ p.title {
 
 #team .peoples .location {
   color: #C0BCB8;
+}
+
+#contact {
+  height: 54.16667vw;
+  background: #F1F1F1;
+  padding-top: 4.42708vw;
+}
+
+#contact .wrapper {
+  padding: 0 5.72917vw;
+}
+
+#contact .contact-card {
+  width: 27.08333vw;
+  height: 17.1875vw;
+  border-radius: 1.04167vw;
+  background: white;
+  padding: 2.60417vw 1.5625vw 2.08333vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 0.52083vw 1.04167vw 0 rgba(26, 0, 41, 0.15);
+          box-shadow: 0 0.52083vw 1.04167vw 0 rgba(26, 0, 41, 0.15);
+}
+
+#contact .contact-card .contacts {
+  width: 11.97917vw;
+}
+
+#contact .contact-card .contacts .title {
+  width: 7.29167vw;
+  height: 0.9375vw;
+  margin-top: 0;
+}
+
+#contact .contact-card .contacts .country {
+  margin-top: 0.57292vw;
+  font-family: "Proxima Nova Light";
+  font-size: 0.83333vw;
+  line-height: 1.09375vw;
+  color: #171D1A;
+}
+
+#contact .contact-card .contacts .adress_1, #contact .contact-card .contacts .adress_2, #contact .contact-card .contacts .tel, #contact .contact-card .contacts a {
+  font-family: "Proxima Nova Light";
+  font-size: 0.9375vw;
+  line-height: 1.35417vw;
+  color: #171D1A;
+}
+
+#contact .contact-card .contacts .adress_1 {
+  font-family: "Proxima Nova Semibold";
+  margin-top: 1.92708vw;
+}
+
+#contact .contact-card .contacts .tel {
+  margin-top: 1.25vw;
+}
+
+#contact .contact-card .contacts a {
+  text-decoration: underline;
+}
+
+#contact .form {
+  position: relative;
+  height: 29.6875vw;
+  margin-top: 1.5625vw;
+  border-radius: 1.04167vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A0029), to(#1A0D3E));
+  background: linear-gradient(180deg, #1A0029 0%, #1A0D3E 100%);
+}
+
+#contact .form .flex .flex-item:nth-child(1) {
+  width: 27.08333vw;
+  padding-left: 5.72917vw;
+}
+
+#contact .form .flex .flex-item:nth-child(2) {
+  width: 33.59375vw;
+  padding: 0;
+  padding-left: 0.75521vw;
+}
+
+#contact .form p {
+  font-family: "Proxima Nova Bold";
+  font-size: 1.25vw;
+  line-height: 1.77083vw;
+  letter-spacing: 0.26042vw;
+  color: #C0BCB8;
+  margin-top: 0.78125vw;
+  text-transform: uppercase;
+}
+
+#contact .form .silver_bg {
+  height: 7.8125vw;
+  width: 7.8125vw;
+  background: #C0BCB8;
+  padding: 0.75521vw;
+}
+
+#contact .form .silver_bg img {
+  width: 6.33333vw;
+  height: 0.8125vw;
+}
+
+#contact .form form {
+  width: 21.35417vw;
+  padding-left: 0.78125vw;
+}
+
+#contact .form form input, #contact .form form textarea {
+  width: 100%;
+  border-radius: 0.78125vw;
+  margin-bottom: 1.04167vw;
+  padding: 1.19792vw 1.5625vw;
+  font-family: "Proxima Nova Semibold";
+  font-size: 0.9375vw;
+  line-height: 1.30208vw;
+  color: #171D1A;
+}
+
+#contact .form form input::-webkit-input-placeholder, #contact .form form textarea::-webkit-input-placeholder {
+  color: #C0BCB8;
+  text-transform: capitalize;
+}
+
+#contact .form form input:-ms-input-placeholder, #contact .form form textarea:-ms-input-placeholder {
+  color: #C0BCB8;
+  text-transform: capitalize;
+}
+
+#contact .form form input::-ms-input-placeholder, #contact .form form textarea::-ms-input-placeholder {
+  color: #C0BCB8;
+  text-transform: capitalize;
+}
+
+#contact .form form input::placeholder, #contact .form form textarea::placeholder {
+  color: #C0BCB8;
+  text-transform: capitalize;
+}
+
+#contact .form form input {
+  height: 3.64583vw;
+}
+
+#contact .form form textarea {
+  height: 7.29167vw;
+}
+
+#contact .form form input[type=submit] {
+  background: none;
+  border: 0.15625vw #F1F1F1 solid;
+  color: white;
+  text-transform: uppercase;
+}
+
+footer {
+  height: 18.22917vw;
+  background: white;
 }

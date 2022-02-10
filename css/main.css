@@ -86,7 +86,11 @@ body {
 section {
   width: 100vw;
   height: 100%;
-  z-index: 1;
+}
+
+.wrapper {
+  width: 67.1875vw;
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -97,6 +101,10 @@ section {
 a {
   text-decoration: none;
   color: initial;
+}
+
+img {
+  width: inherit;
 }
 
 .flex, *.flex, * .flex, * + .flex {
@@ -110,12 +118,20 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 #header {
   position: relative;
   height: 41.66667vw;
   background-color: #1A0029;
+  margin-bottom: 10.41667vw;
+}
+
+#header .main_title {
+  height: 2.76042vw;
+  width: 21.35417vw;
+  margin: auto;
 }
 
 #header .bg_world {
@@ -154,6 +170,7 @@ nav {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  z-index: 1;
 }
 
 nav .flex {
@@ -171,11 +188,4 @@ nav a {
 
 nav a:hover {
   color: #C0BCB8;
-}
-
-@media screen and (min-width: 1440px) {
-  .wrapper {
-    width: 1290px;
-    margin: 0 auto;
-  }
 }

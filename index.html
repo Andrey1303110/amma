@@ -132,10 +132,10 @@
                     </div>
                     <p>send an email to the team</p>
                 </div>
-                <form class="flex-item flex-cl" action="" method="post">
-                    <input type="email" placeholder="from">
-                    <input type="text" placeholder="subject">
-                    <textarea name="" id="" cols="auto" rows="3" placeholder="body"></textarea>
+                <form class="flex-item flex-cl" action="form.php" method="post">
+                    <input type="email" name="email" placeholder="from" required minlength="5" maxlength="50">
+                    <input type="text" name="subject" placeholder="subject" required minlength="3" maxlength="150">
+                    <textarea name="text" id="" cols="auto" rows="3" placeholder="body" required minlength="5" maxlength="1500"></textarea>
                     <input type="submit" value="send">
                 </form>
             </div>

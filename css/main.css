@@ -211,7 +211,7 @@ nav {
 }
 
 nav .flex {
-  width: 333px;
+  width: 17.34375vw;
   margin: 0 auto;
 }
 
@@ -274,10 +274,14 @@ p.title {
 
 #mission ul li .text::before {
   position: absolute;
-  content: url(../images/check.svg);
+  content: "";
+  background: url(../images/check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 0.9375vw;
   height: 0.9375vw;
   left: -2.23958vw;
+  top: 0.23438vw;
 }
 
 #team {
@@ -405,13 +409,26 @@ p.title {
   margin-top: 1.92708vw;
 }
 
+#contact .contact-card .contacts .adress_2 {
+  margin-bottom: 1.25vw;
+}
+
 #contact .contact-card .contacts .tel {
-  margin-top: 1.25vw;
   text-decoration: none;
 }
 
 #contact .contact-card .contacts a {
   text-decoration: underline;
+}
+
+#contact .contact-card .for_img {
+  width: 8.33333vw;
+  height: 7.70833vw;
+  border-radius: 2.08333vw;
+}
+
+#contact .contact-card .for_img img {
+  width: 100%;
 }
 
 #contact .form {

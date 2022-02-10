@@ -119,7 +119,7 @@ nav {
     transform: translate(-50%);
     z-index: 1;
     .flex {
-        width: 333px;
+        width: 333/$width*100vw;
         margin: 0 auto;
     }
     a {
@@ -176,10 +176,14 @@ p.title {
                 color: $normal;
                 &::before {
                     position: absolute;
-                    content: url(../images/check.svg);
+                    content: "";
+                    background: url(../images/check.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
                     width: 18/$width*100vw;
                     height: 18/$width*100vw;
                     left: -43/$width*100vw;
+                    top: 4.5/$width*100vw;
                 }
             }
         }
@@ -278,12 +282,22 @@ p.title {
                 font-family: $semibold;
                 margin-top: 37/$width*100vw;
             }
+            .adress_2 {
+                margin-bottom: 24/$width*100vw;
+            }
             .tel {
-                margin-top: 24/$width*100vw;
                 text-decoration: none;
             }
             a {
                 text-decoration: underline;
+            }
+        }
+        .for_img {
+            width: 160/$width*100vw;
+            height: 148/$width*100vw;
+            border-radius: 40/$width*100vw;
+            img {
+                width: 100%;
             }
         }
 

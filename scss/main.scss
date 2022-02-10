@@ -24,17 +24,12 @@ html {
 
 body {
     position: relative;
-
+    overflow-x: hidden;
 }
 
 section {
     width: 100vw;
     height: 100%;
-}
-
-.wrapper {
-    width: 1070/$width*100vw;
-    margin: 0 auto;
 }
 
 .wrapper {
@@ -285,6 +280,7 @@ p.title {
             }
             .tel {
                 margin-top: 24/$width*100vw;
+                text-decoration: none;
             }
             a {
                 text-decoration: underline;
@@ -378,4 +374,11 @@ p.title {
 footer {
     height: 350/$width*100vw;
     background: white;
+}
+
+@media screen and (min-width: 1440px) {
+    .wrapper {
+        width: 1070/$width*100vw;
+        margin: 0 auto;
+    }
 }

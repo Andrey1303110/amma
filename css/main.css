@@ -83,16 +83,12 @@ html {
 
 body {
   position: relative;
+  overflow-x: hidden;
 }
 
 section {
   width: 100vw;
   height: 100%;
-}
-
-.wrapper {
-  width: 55.72917vw;
-  margin: 0 auto;
 }
 
 .wrapper {
@@ -411,6 +407,7 @@ p.title {
 
 #contact .contact-card .contacts .tel {
   margin-top: 1.25vw;
+  text-decoration: none;
 }
 
 #contact .contact-card .contacts a {
@@ -531,4 +528,11 @@ p.title {
 footer {
   height: 18.22917vw;
   background: white;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    width: 55.72917vw;
+    margin: 0 auto;
+  }
 }

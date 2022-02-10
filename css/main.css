@@ -75,8 +75,10 @@ table {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: .4s ease-in-out;
-  transition: .4s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -503,6 +505,22 @@ p.title {
   border: 0.15625vw #F1F1F1 solid;
   color: white;
   text-transform: uppercase;
+}
+
+#contact .footer {
+  height: 1.09375vw;
+  margin-top: 4.58333vw;
+}
+
+#contact .footer img {
+  width: 7.29167vw;
+}
+
+#contact .footer p {
+  font-family: "Proxima Nova Light";
+  font-size: 0.72917vw;
+  line-height: 0.98958vw;
+  color: #C0BCB8;
 }
 
 footer {

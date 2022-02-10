@@ -16,11 +16,15 @@ $bold: 'Proxima Nova Bold';
 
 * {
     box-sizing: border-box;
-    transition: .4s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     position: relative;
+
 }
 
 section {
@@ -351,6 +355,19 @@ p.title {
                 color: white;
                 text-transform: uppercase;
             }
+        }
+    }
+    .footer {
+        height: 21/$width*100vw;
+        margin-top: 88/$width*100vw;
+        img {
+            width: 140/$width*100vw;
+        }
+        p {
+            font-family: $light;
+            font-size: 14/$width*100vw;
+            line-height: 19/$width*100vw;
+            color: $silver;
         }
     }
 }

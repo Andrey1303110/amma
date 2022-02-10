@@ -121,6 +121,17 @@ img {
   width: 100%;
 }
 
+.flex-cl, *.flex-cl, * .flex-cl, * + .flex-cl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
 #header {
   position: relative;
   height: 41.66667vw;
@@ -242,4 +253,75 @@ p.title {
   width: 0.9375vw;
   height: 0.9375vw;
   left: -2.23958vw;
+}
+
+#team {
+  height: 34.89583vw;
+}
+
+#team .title {
+  margin-top: 5.57292vw;
+  margin-bottom: 3.48958vw;
+}
+
+#team .flex-item {
+  width: 100%;
+}
+
+#team .peoples {
+  width: 11.19792vw;
+  height: 12.86458vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#team .peoples:nth-child(1) {
+  margin-left: 5.46875vw;
+}
+
+#team .peoples:nth-child(3) {
+  margin-right: 5.46875vw;
+}
+
+#team .peoples.flex-item {
+  padding: 0;
+}
+
+#team .peoples .for_img {
+  width: 7.29167vw;
+  background: #F1F1F1;
+  border-radius: 2.08333vw;
+}
+
+#team .peoples p {
+  text-align: center;
+}
+
+#team .peoples .name {
+  font-family: "Proxima Nova Bold";
+  font-size: 1.04167vw;
+  line-height: 1.40625vw;
+  color: #1A0029;
+}
+
+#team .peoples .role, #team .peoples .location {
+  font-family: "Proxima Nova Light";
+  font-size: 0.83333vw;
+  line-height: 1.09375vw;
+}
+
+#team .peoples .role {
+  color: #171D1A;
+}
+
+#team .peoples .location {
+  color: #C0BCB8;
 }

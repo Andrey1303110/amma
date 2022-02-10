@@ -3,7 +3,7 @@ isset($_POST['email']) ? $email = htmlspecialchars($_POST['email']) : exit();
 isset($_POST['subject']) ? $subject = htmlspecialchars($_POST['subject']) : exit();
 isset($_POST['text']) ? $text = htmlspecialchars($_POST['text']) : exit();
 
-$addres  = "info@amma.vc";
+$addres = "info@amma.vc";
  
 $mes = "Message from site AMMA\nEmail: $email\nSubject: $subject\nText: $text";
  

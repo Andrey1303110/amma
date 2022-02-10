@@ -33,7 +33,7 @@ section {
 }
 
 .wrapper {
-    width: 1290/$width*100vw;
+    width: 1070/$width*100vw;
     margin: 0 auto;
 }
 
@@ -80,10 +80,14 @@ img {
     height: 800/$width*100vw;
     background-color: $violet;
     margin-bottom: 200/$width*100vw;
+    .wrapper {
+        width: 1290/$width*100vw;
+    }
     .main_title {
         height: 53/$width*100vw;
         width: 410/$width*100vw;
         margin: auto;
+        margin-left: 0;
     }
     .bg_world {
         position: absolute;
@@ -138,11 +142,9 @@ nav {
 .flex .flex-item {
     &:nth-child(1) {
         width: 520/$width*100vw;
-        padding-left: 110/$width*100vw;
     }
     &:nth-child(2) {
         width: 645/$width*100vw;
-        padding-right: 110/$width*100vw;
     }
 }
 
@@ -246,8 +248,8 @@ p.title {
     height: 1040/$width*100vw;
     background: $white;
     padding-top: 85/$width*100vw;
-    .wrapper {
-        padding: 0 110/$width*100vw;
+    p.title {
+        margin-bottom: 88/$width*100vw;
     }
     .contact-card {
         width: 520/$width*100vw;
@@ -295,14 +297,15 @@ p.title {
         height: 570/$width*100vw;
         margin-top: 30/$width*100vw;
         border-radius: 20/$width*100vw;
+        padding: 0 110/$width*100vw;
         background: linear-gradient(180deg, $violet 0%, #1A0D3E 100%);
-        .flex .flex-item {
+        box-shadow: 0 10/$width*100vw 20/$width*100vw 0 rgba(26, 0, 41, 0.15);
+        .flex-item {
             &:nth-child(1) {
-                width: 520/$width*100vw;
-                padding-left: 110/$width*100vw;
+                width: 370/$width*100vw;
             }
             &:nth-child(2) {
-                width: 645/$width*100vw;
+                width: 425/$width*100vw;
                 padding: 0;
                 padding-left: 14.5/$width*100vw;
             }

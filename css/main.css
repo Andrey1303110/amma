@@ -91,7 +91,7 @@ section {
 }
 
 .wrapper {
-  width: 67.1875vw;
+  width: 55.72917vw;
   margin: 0 auto;
 }
 
@@ -164,10 +164,15 @@ img {
   margin-bottom: 10.41667vw;
 }
 
+#header .wrapper {
+  width: 67.1875vw;
+}
+
 #header .main_title {
   height: 2.76042vw;
   width: 21.35417vw;
   margin: auto;
+  margin-left: 0;
 }
 
 #header .bg_world {
@@ -228,12 +233,10 @@ nav a:hover {
 
 .flex .flex-item:nth-child(1) {
   width: 27.08333vw;
-  padding-left: 5.72917vw;
 }
 
 .flex .flex-item:nth-child(2) {
   width: 33.59375vw;
-  padding-right: 5.72917vw;
 }
 
 p.title {
@@ -359,8 +362,8 @@ p.title {
   padding-top: 4.42708vw;
 }
 
-#contact .wrapper {
-  padding: 0 5.72917vw;
+#contact p.title {
+  margin-bottom: 4.58333vw;
 }
 
 #contact .contact-card {
@@ -419,17 +422,19 @@ p.title {
   height: 29.6875vw;
   margin-top: 1.5625vw;
   border-radius: 1.04167vw;
+  padding: 0 5.72917vw;
   background: -webkit-gradient(linear, left top, left bottom, from(#1A0029), to(#1A0D3E));
   background: linear-gradient(180deg, #1A0029 0%, #1A0D3E 100%);
+  -webkit-box-shadow: 0 0.52083vw 1.04167vw 0 rgba(26, 0, 41, 0.15);
+          box-shadow: 0 0.52083vw 1.04167vw 0 rgba(26, 0, 41, 0.15);
 }
 
-#contact .form .flex .flex-item:nth-child(1) {
-  width: 27.08333vw;
-  padding-left: 5.72917vw;
+#contact .form .flex-item:nth-child(1) {
+  width: 19.27083vw;
 }
 
-#contact .form .flex .flex-item:nth-child(2) {
-  width: 33.59375vw;
+#contact .form .flex-item:nth-child(2) {
+  width: 22.13542vw;
   padding: 0;
   padding-left: 0.75521vw;
 }

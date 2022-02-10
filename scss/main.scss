@@ -5,6 +5,7 @@ $violet: #1A0029;
 $silver: #C0BCB8;
 $black: #171D1A;
 $white: #F1F1F1;
+$normal: #707070;
 
 $width: 1920;
 
@@ -109,6 +110,59 @@ nav {
         color: $white;
         &:hover {
             color: $silver;
+        }
+    }
+}
+
+.flex .flex-item {
+    &:nth-child(1) {
+        width: 520/$width*100vw;
+        padding-left: 110/$width*100vw;
+    }
+    &:nth-child(2) {
+        width: 645/$width*100vw;
+        padding-right: 110/$width*100vw;
+    }
+}
+
+p.title {
+    font-family: $bold;
+    font-size: 72/$width*100vw;
+    color: $violet;
+    line-height: 96/$width*100vw;
+    text-transform: capitalize;
+    margin-bottom: 40/$width*100vw;
+}
+
+#mission {
+    height: 390/$width*100vw;
+    .text {
+        font-family: $light;
+        font-size: 24/$width*100vw;
+        line-height: 36/$width*100vw;
+        color: $silver;
+    }
+    ul {
+        width: 480/$width*100vw;
+        margin-top: 40/$width*100vw;;
+        margin-left: 55/$width*100vw;
+        li {
+            .text {
+                position: relative;
+                width: 100%;
+                margin-bottom: 31/$width*100vw;
+                font-family: $light;
+                font-size: 18/$width*100vw;
+                line-height: 26/$width*100vw;
+                color: $normal;
+                &::before {
+                    position: absolute;
+                    content: url(../images/check.svg);
+                    width: 18/$width*100vw;
+                    height: 18/$width*100vw;
+                    left: -43/$width*100vw;
+                }
+            }
         }
     }
 }

@@ -500,6 +500,8 @@ p.title {
 
 #contact .form form textarea {
   height: 7.29167vw;
+  min-height: 7.29167vw;
+  resize: vertical;
 }
 
 #contact .form form input[type=submit] {
@@ -507,6 +509,19 @@ p.title {
   border: 0.15625vw #F1F1F1 solid;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+#contact .form form input[type=submit]:hover {
+  background: #F1F1F1;
+  color: #171D1A;
+}
+
+#contact .form form input[type=submit]:active {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 #contact .footer {

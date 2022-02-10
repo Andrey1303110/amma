@@ -347,12 +347,23 @@ p.title {
             }
             textarea {
                 height: 140/$width*100vw;
+                min-height: 140/$width*100vw;
+                resize: vertical;
             }
             input[type=submit] {
                 background: none;
                 border: 3/$width*100vw $white solid;
                 color: white;
                 text-transform: uppercase;
+                cursor: pointer;
+                transition: .4s ease-in-out;
+                &:hover {
+                    background: $white;
+                    color: $black;
+                }
+                &:active {
+                    transform: scale(.95);
+                }
             }
         }
     }

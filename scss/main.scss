@@ -30,45 +30,46 @@ section {
     box-sizing: content-box;
 }
 
+    
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+img {
+    width: inherit;
+}
+
+.flex, *.flex, * .flex, * + .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-cl, *.flex-cl, * .flex-cl, * + .flex-cl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-center, *.flex-center, * .flex-center, * + .flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-all, *.flex-center-all, * .flex-center-all, * + .flex-center-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (min-width: 1440px) {
     $width: 1920;
 
     .wrapper {
         margin: 0 auto;
         width: 1070/$width*1*100vw;
-    }
-    
-    a {
-        text-decoration: none;
-        color: initial;
-    }
-    
-    img {
-        width: inherit;
-    }
-    
-    .flex, *.flex, * .flex, * + .flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .flex-cl, *.flex-cl, * .flex-cl, * + .flex-cl {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .flex-center, *.flex-center, * .flex-center, * + .flex-center {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .flex-center-all, *.flex-center-all, * .flex-center-all, * + .flex-center-all {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     #header {
@@ -414,39 +415,6 @@ section {
         width: 1070/$width*1*100vw;
     }
     
-    a {
-        text-decoration: none;
-        color: initial;
-    }
-    
-    img {
-        width: inherit;
-    }
-    
-    .flex, *.flex, * .flex, * + .flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .flex-cl, *.flex-cl, * .flex-cl, * + .flex-cl {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .flex-center, *.flex-center, * .flex-center, * + .flex-center {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .flex-center-all, *.flex-center-all, * .flex-center-all, * + .flex-center-all {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
     #header {
         position: relative;
         height: 800/$width*1*100vw;
@@ -787,39 +755,6 @@ section {
     .wrapper {
         margin: 0 auto;
         width: 1070/$width*1*100vw;
-    }
-    
-    a {
-        text-decoration: none;
-        color: initial;
-    }
-    
-    img {
-        width: inherit;
-    }
-    
-    .flex, *.flex, * .flex, * + .flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .flex-cl, *.flex-cl, * .flex-cl, * + .flex-cl {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .flex-center, *.flex-center, * .flex-center, * + .flex-center {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .flex-center-all, *.flex-center-all, * .flex-center-all, * + .flex-center-all {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     #header {
@@ -1171,39 +1106,6 @@ section {
     .wrapper {
         margin: 0 auto;
         width: 1070/$width*1*100vw;
-    }
-    
-    a {
-        text-decoration: none;
-        color: initial;
-    }
-    
-    img {
-        width: inherit;
-    }
-    
-    .flex, *.flex, * .flex, * + .flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
-    
-    .flex-cl, *.flex-cl, * .flex-cl, * + .flex-cl {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .flex-center, *.flex-center, * .flex-center, * + .flex-center {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .flex-center-all, *.flex-center-all, * .flex-center-all, * + .flex-center-all {
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
     
     #header {

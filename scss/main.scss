@@ -402,7 +402,7 @@ img {
     }
     
     footer {
-        height: 350/$width*1*100vw;
+        height: 250/$width*1*100vw;
         background: white;
     }    
 }
@@ -594,6 +594,7 @@ img {
         min-height: 1040/$width*1*100vw;
         background: $white;
         padding-top: 85/$width*1*100vw;
+        padding-bottom: 55/$width*1*100vw;
         p.title {
             margin-bottom: 88/$width*1*100vw;
         }
@@ -744,7 +745,7 @@ img {
     }
     
     footer {
-        height: 350/$width*1*100vw;
+        height: 350/$width*0*100vw;
         background: white;
     }    
 }
@@ -1188,7 +1189,7 @@ img {
         color: $violet;
         line-height: 96/$width*1.5*100vw;
         text-transform: capitalize;
-        margin-bottom: 40/$width*2*100vw;
+        margin-bottom: 40/$width*3*100vw;
     }
     
     #mission {

@@ -500,7 +500,7 @@ img {
     color: #C0BCB8;
   }
   footer {
-    height: 18.22917vw;
+    height: 13.02083vw;
     background: white;
   }
 }
@@ -687,6 +687,7 @@ img {
     min-height: 72.22222vw;
     background: #F1F1F1;
     padding-top: 5.90278vw;
+    padding-bottom: 3.81944vw;
   }
   #contact p.title {
     margin-bottom: 6.11111vw;
@@ -852,7 +853,7 @@ img {
     color: #C0BCB8;
   }
   footer {
-    height: 24.30556vw;
+    height: 0vw;
     background: white;
   }
 }
@@ -1312,7 +1313,7 @@ img {
     color: #1A0029;
     line-height: 11.25vw;
     text-transform: capitalize;
-    margin-bottom: 6.25vw;
+    margin-bottom: 9.375vw;
   }
   #mission {
     min-height: 30.46875vw;

@@ -27,7 +27,6 @@ body {
 section {
     width: 100vw;
     height: 100%;
-    box-sizing: content-box;
 }
 
 @media screen and (min-width: 1440px) {
@@ -75,7 +74,7 @@ section {
         position: relative;
         height: 800/$width*1*100vw;
         background-color: $violet;
-        //margin-bottom: 200/$width*1*100vw;
+        margin-bottom: 200/$width*1*100vw;
         .wrapper {
             width: 1290/$width*1*100vw;
         }
@@ -154,10 +153,7 @@ section {
     }
     
     #mission {
-        //min-height: 390/$width*1*100vw;
-        margin-top: -100/$width*100vw;
-        padding-top: 375/$width*1*100vw;
-        padding-bottom: 50/$width*1*100vw;
+        height: 390/$width*1*100vw;
         background: white;
         .text {
             font-family: $light;
@@ -196,7 +192,7 @@ section {
     
     #team {
         height: 670/$width*1*100vw;
-        padding-top: 237/$width*1*100vw;
+        padding-top: 107/$width*1*100vw;
         background: white;
         .title {
             margin-bottom: 67/$width*1*100vw;
@@ -451,7 +447,7 @@ section {
         position: relative;
         height: 800/$width*1*100vw;
         background-color: $violet;
-        //margin-bottom: 200/$width*1*100vw;
+        margin-bottom: 200/$width*1*100vw;
         .wrapper {
             width: 1290/$width*1*100vw;
         }
@@ -531,8 +527,6 @@ section {
     
     #mission {
         height: 390/$width*1*100vw;
-        padding-top: 300/$width*1*100vw;
-        margin-top: -100/$width*100vw;
         background: white;
         .text {
             font-family: $light;
@@ -571,7 +565,7 @@ section {
     
     #team {
         height: 670/$width*1*100vw;
-        padding-top: 237/$width*1*100vw;
+        padding-top: 107/$width*1*100vw;
         background: white;
         .title {
             margin-bottom: 67/$width*1*100vw;
@@ -826,7 +820,7 @@ section {
         position: relative;
         height: 800/$width*1*100vw;
         background-color: $violet;
-        //margin-bottom: 200/$width*1*100vw;
+        margin-bottom: 200/$width*1*100vw;
         .wrapper {
             width: 1290/$width*1*100vw;
         }
@@ -906,7 +900,6 @@ section {
     
     #mission {
         min-height: 390/$width*1*100vw;
-        padding-top: 200/$width*1*100vw;
         background: white;
         .flex .flex-item {
             &:nth-child(2) {
@@ -950,8 +943,7 @@ section {
     
     #team {
         min-height: 670/$width*1*100vw;
-        padding-top: 237/$width*1*100vw;
-        padding-bottom: 237/$width*1*100vw;
+        padding-top: 107/$width*1*100vw;
         background: white;
         .title {
             margin-bottom: 67/$width*1*100vw;
@@ -1210,7 +1202,7 @@ section {
         position: relative;
         height: 800/$width*1*100vw;
         background-color: $violet;
-        //margin-bottom: 200/$width*1*100vw;
+        margin-bottom: 200/$width*1*100vw;
         .wrapper {
             width: 1290/$width*1*100vw;
         }
@@ -1286,20 +1278,19 @@ section {
         color: $violet;
         line-height: 96/$width*1.5*100vw;
         text-transform: capitalize;
-        margin-bottom: 40/$width*2*100vw;
+        margin-bottom: 40/$width*1.5*100vw;
     }
     
     #mission {
         min-height: 390/$width*1*100vw;
-        padding-top: 200/$width*2*100vw;
         background: white;
         .flex {
             flex-direction: column;
         }
         .text {
             font-family: $light;
-            font-size: 24/$width*2.5*100vw;
-            line-height: 36/$width*2.5*100vw;
+            font-size: 24/$width*2*100vw;
+            line-height: 36/$width*2*100vw;
             color: $silver;
         }
         ul {
@@ -1310,10 +1301,10 @@ section {
                 .text {
                     position: relative;
                     width: 100%;
-                    margin-bottom: 31/$width*4*100vw;
+                    margin-bottom: 31/$width*3*100vw;
                     font-family: $light;
-                    font-size: 18/$width*3*100vw;
-                    line-height: 26/$width*3*100vw;
+                    font-size: 18/$width*2.5*100vw;
+                    line-height: 26/$width*2.5*100vw;
                     color: $normal;
                     &::before {
                         position: absolute;
@@ -1333,15 +1324,12 @@ section {
     
     #team {
         min-height: 670/$width*1*100vw;
-        margin-top: 237/$width*1*100vw;
+        padding-top: 107/$width*1*100vw;
         background: white;
         .title {
             margin-bottom: 67/$width*1*100vw;
         }
         .flex-item {
-            &.flex-cl {
-                min-height: 100vh;
-            }
             width: 100%;
             .flex {
                 flex-direction: column;

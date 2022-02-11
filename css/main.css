@@ -92,6 +92,8 @@ body {
 section {
   width: 100vw;
   height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 @media screen and (min-width: 1440px) {
@@ -154,7 +156,6 @@ section {
     position: relative;
     height: 41.66667vw;
     background-color: #1A0029;
-    margin-bottom: 10.41667vw;
   }
   #header .wrapper {
     width: 67.1875vw;
@@ -229,7 +230,9 @@ section {
     margin-bottom: 2.08333vw;
   }
   #mission {
-    height: 20.3125vw;
+    margin-top: -5.20833vw;
+    padding-top: 19.53125vw;
+    padding-bottom: 2.60417vw;
     background: white;
   }
   #mission .text {
@@ -265,7 +268,7 @@ section {
   }
   #team {
     height: 34.89583vw;
-    padding-top: 5.57292vw;
+    padding-top: 12.34375vw;
     background: white;
   }
   #team .title {
@@ -556,7 +559,6 @@ section {
     position: relative;
     height: 55.55556vw;
     background-color: #1A0029;
-    margin-bottom: 13.88889vw;
   }
   #header .wrapper {
     width: 89.58333vw;
@@ -632,6 +634,8 @@ section {
   }
   #mission {
     height: 27.08333vw;
+    padding-top: 20.83333vw;
+    margin-top: -6.94444vw;
     background: white;
   }
   #mission .text {
@@ -667,7 +671,7 @@ section {
   }
   #team {
     height: 46.52778vw;
-    padding-top: 7.43056vw;
+    padding-top: 16.45833vw;
     background: white;
   }
   #team .title {
@@ -958,7 +962,6 @@ section {
     position: relative;
     height: 62.5vw;
     background-color: #1A0029;
-    margin-bottom: 15.625vw;
   }
   #header .wrapper {
     width: 100.78125vw;
@@ -1034,6 +1037,7 @@ section {
   }
   #mission {
     min-height: 30.46875vw;
+    padding-top: 15.625vw;
     background: white;
   }
   #mission .flex .flex-item:nth-child(2) {
@@ -1072,7 +1076,8 @@ section {
   }
   #team {
     min-height: 52.34375vw;
-    padding-top: 8.35938vw;
+    padding-top: 18.51562vw;
+    padding-bottom: 18.51562vw;
     background: white;
   }
   #team .title {
@@ -1382,7 +1387,6 @@ section {
     position: relative;
     height: 62.5vw;
     background-color: #1A0029;
-    margin-bottom: 15.625vw;
   }
   #header .wrapper {
     width: 100.78125vw;
@@ -1455,10 +1459,11 @@ section {
     color: #1A0029;
     line-height: 11.25vw;
     text-transform: capitalize;
-    margin-bottom: 4.6875vw;
+    margin-bottom: 6.25vw;
   }
   #mission {
     min-height: 30.46875vw;
+    padding-top: 31.25vw;
     background: white;
   }
   #mission .flex {
@@ -1469,8 +1474,8 @@ section {
   }
   #mission .text {
     font-family: "Proxima Nova Light";
-    font-size: 3.75vw;
-    line-height: 5.625vw;
+    font-size: 4.6875vw;
+    line-height: 7.03125vw;
     color: #C0BCB8;
   }
   #mission ul {
@@ -1481,10 +1486,10 @@ section {
   #mission ul li .text {
     position: relative;
     width: 100%;
-    margin-bottom: 7.26563vw;
+    margin-bottom: 9.6875vw;
     font-family: "Proxima Nova Light";
-    font-size: 3.51562vw;
-    line-height: 5.07812vw;
+    font-size: 4.21875vw;
+    line-height: 6.09375vw;
     color: #707070;
   }
   #mission ul li .text::before {
@@ -1500,7 +1505,7 @@ section {
   }
   #team {
     min-height: 52.34375vw;
-    padding-top: 8.35938vw;
+    margin-top: 18.51562vw;
     background: white;
   }
   #team .title {
@@ -1508,6 +1513,9 @@ section {
   }
   #team .flex-item {
     width: 100%;
+  }
+  #team .flex-item.flex-cl {
+    min-height: 100vh;
   }
   #team .flex-item .flex {
     -webkit-box-orient: vertical;

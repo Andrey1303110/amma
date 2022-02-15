@@ -14,7 +14,7 @@ $send = mail(
 );
 
 ini_set('short_open_tag', 'On');
-header('Refresh: 100; URL=index.html');
+header('Refresh: 10; URL=index.html');
 
 if ($addres && $subject && $text && $send) {
     $_SESSION['card'] = [
@@ -63,19 +63,19 @@ else {
         }
         h4 {
             margin-block-start: .5rem;
-            font-size: 3rem;
+            font-size: 2.15rem;
         }
         p {
-            font-size: 1.5rem;
-            line-height: 2rem;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
         }
         hr:not([size]) {
             height: 2px;
         }
         .mb-0 {
             margin-bottom: 0!important;
-            font-size: 2rem;
-            line-height: 2.5rem;
+            font-size: 1.75rem;
+            line-height: 2rem;
         }
     </style>
 </head>

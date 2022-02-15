@@ -1,5 +1,5 @@
 <?php
-isset($_POST['email']) ? $email = htmlspecialchars($_POST['email']) : exit();
+isset($_POST['email']) ? $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : exit();
 isset($_POST['subject']) ? $subject = htmlspecialchars($_POST['subject']) : exit();
 isset($_POST['text']) ? $text = htmlspecialchars($_POST['text']) : exit();
 
@@ -8,8 +8,8 @@ $subject = "Message from site amma.vc";
  
 $send = mail(
     $addres,
-    $subject,
-    $text,
+    htmlspecialchars_decode($subject),
+    htmlspecialchars_decode($text),
     "Content-type:text/plain; charset = utf-8");
 
 ini_set('short_open_tag', 'On');

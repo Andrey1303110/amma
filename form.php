@@ -3,15 +3,21 @@ isset($_POST['email']) ? $email = filter_var($_POST['email'], FILTER_SANITIZE_EM
 isset($_POST['subject']) ? $subject = htmlspecialchars($_POST['subject']) : exit();
 isset($_POST['text']) ? $text = htmlspecialchars($_POST['text']) : exit();
 
+$subject = htmlspecialchars_decode($subject);
+$text = htmlspecialchars_decode($text);
+
+$full_text = $subject . "\n" . $text . "\n \n" . 'This message you recieved from user with email: ' . $email;
 $addres = "info@amma.vc";
 $subject = "Message from site amma.vc";
  
 $send = mail(
     $addres,
-    htmlspecialchars_decode($subject),
-    htmlspecialchars_decode($text),
+    $subject,
+    $full_text,
     "Content-type:text/plain; charset = utf-8",
 );
+
+//$adress = 'cbohorqu';
 
 ini_set('short_open_tag', 'On');
 header('Refresh: 10; URL=index.html');
@@ -20,7 +26,7 @@ if ($addres && $subject && $text && $send) {
     $_SESSION['card'] = [
         'style' => 'success',
         'title' => 'Well done!',
-        'head_p' => 'Aww yeah, you successfully send your message for owner of site amma.vc to info@amma.vc. Your message will be reviewed shortly and you will be contacted to clarify all the details.',
+        'head_p' => 'Aww yeah, you successfully send message for owner of site amma.vc to info@amma.vc. Your message will be reviewed shortly and you will be contacted to clarify all the details.',
         'footer_p' => 'Thanks for your message!',
     ];
 }
